@@ -2,6 +2,13 @@
 
 A modern, highly responsive front-end expense tracking dashboard interface built with semantic HTML5, Bootstrap 5, and jQuery. 
 
+## 📷 Visual Showcase
+
+### Desktop View
+<kbd>
+  <img src="./images/dashboard-desktop.png" alt="FinLogger Desktop Dashboard" width="100%">
+</kbd>
+
 ## 🚀 Live Demo
 [View the Interactive Dashboard Live]( https://lady-dot.github.io/Responsive-Financial-Dashboard/)
 
