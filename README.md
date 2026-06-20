@@ -3,7 +3,7 @@
 A modern, highly responsive front-end expense tracking dashboard interface built with semantic HTML5, Bootstrap 5, and jQuery. 
 
 ## 🚀 Live Demo
-[View the Interactive Dashboard Live](YOUR_GITHUB_PAGES_LINK_HERE)
+[View the Interactive Dashboard Live]( https://lady-dot.github.io/Responsive-Financial-Dashboard/)
 
 ## ✨ Core Features
 - **Dynamic Metric Architecture:** Automatically aggregates and displays total expenditures, monthly revenue income, and real-time net balances.
