@@ -1,0 +1,146 @@
+/* ========================================== */
+/* CORE LAYOUT THEMES                         */
+/* ========================================== */
+body {
+    background-color: #fcfcfc;
+    color: #2b2b2b;
+}
+
+/* Header Container Brand Specifications */
+.header {
+    background-color: #007d79 !important; /* Exact brand teal color required */
+    color: #ffffff;
+}
+
+.app-title {
+    font-family: Verdana, Geneva, sans-serif !important;
+    font-size: 2.3rem !important;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Updated to match the strict guideline class requirements precisely */
+.tagline {
+    font-size: 1rem !important;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* ========================================== */
+/* OVERVIEW SECTION COMPONENTS                */
+/* ========================================== */
+.card {
+    background-color: #f1f3f4;
+    border: none;
+    border-radius: 4px;
+}
+
+.card-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+/* ========================================== */
+/* TABLE STRUCTURE STYLES                     */
+/* ========================================== */
+.table thead th {
+    background-color: #e9ecef;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    color: #495057;
+}
+
+/* Dynamic Action Button Icons Layout Adjustment */
+.action-icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: transform 0.1s ease;
+}
+
+.action-icon:hover {
+    transform: scale(1.15);
+}
+
+/* ========================================== */
+/* MODAL COMPONENT FORM INTERFACES            */
+/* ========================================== */
+.modal-content {
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+/* Fixed the 'block' syntax error to enable clean input focus rings */
+.form-control:focus, .form-select:focus {
+    border-color: #007d79;
+    box-shadow: 0 0 0 0.25rem rgba(0, 125, 121, 0.25);
+}
+
+/* Task 4: Delete Confirmation Styling Accent Elements */
+#deleteModal .modal-content {
+    border-top: 4px solid #dc3545; /* Crimson top edge indicator border */
+}
+
+#deleteModal .modal-body p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* ================================================================= */
+/* TASK 5: MEDIA QUERIES FOR SMALL/MOBILE DEVICES (< 768px)          */
+/* ================================================================= */
+@media (max-width: 768px) {
+    
+    /** Align Tagline in header to the left **/
+    .tagline {
+        float: left;
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    /** Align month filter in content body to the left **/
+    #monthFilter {
+        float: left !important;
+    } 
+
+    /** Force the control row to wrap gracefully on extra small screens **/
+    .d-flex.justify-content-md-end {
+        justify-content: flex-start !important;
+        width: 100%;
+    }
+    
+    /** Adjust element margins to prevent vertical stacking collisions **/
+    .card {
+        margin-bottom: 5px;
+    }
+    
+    /* Targets our main container wrapper */
+    .container-lg {
+        margin-top: 15px !important;
+    }
+    
+    /* Spacing out the core row divisions */
+    .row {
+        margin-top: 15px;
+    }
+    
+    /* Adds breathing room above the table column sections once they stack */
+    #expense-summary, #expenseTable {
+        margin-top: 10px;
+    }
+}
